@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane expanded="true" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amaromerovic.musicui.DialogController">
+   <header>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="300" style="-fx-font-family: Ubuntu Regular; -fx-font-size: 20;" text="Fill the needed information's bellow!" textAlignment="CENTER">
+             <effect>
+                 <InnerShadow />
+             </effect>
+         <padding>
+            <Insets bottom="40.0" top="30.0" />
+         </padding>
+      </Label>
+   </header>
+   <content>
+      <HBox spacing="150.0">
+         <children>
+            <VBox spacing="50.0">
+               <children>
+                  <Label prefHeight="40.0" text="Current Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="40.0" text="New Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox spacing="50.0">
+               <children>
+                  <TextField fx:id="currentField" alignment="CENTER" editable="false" prefHeight="40.0" prefWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="newField" alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </HBox>
+   </content>
+</DialogPane>
